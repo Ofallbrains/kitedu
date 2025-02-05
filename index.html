@@ -20,22 +20,22 @@
     
         <div class="lg:hidden">
             <span class="text-3xl cursor-pointer">
-                <ion-icon name="search-outline" onclick="Menu(this)"></ion-icon>
+                <ion-icon name="search-outline"></ion-icon>
             </span>
     
             <span class="text-3xl cursor-pointer">
-                <ion-icon name="globe-outline" onclick="Menu(this)"></ion-icon>
+                <ion-icon name="globe-outline"></ion-icon>
             </span>
     
-            <span class="text-4xl pt-2 cursor-pointer text-white bg-[#02876B]">
-                <ion-icon name="menu-outline" class="mt-2" onclick="Menu(this)"></ion-icon>
+            <span id="menu-toogle" class="text-4xl pt-2 cursor-pointer text-white bg-[#02876B]">
+                <ion-icon name="menu-outline" class="mt-2"></ion-icon>
             </span>
         </div>
     </div>
 
       <div>
 
-        <ul class="lg:flex hidden ">
+        <ul id="screen" class="lg:flex lg:items-center z-[-1] ">
           <li><a href="#">Home</a></li>
           <li><a href="#">Plain Language</a></li>
           <li><a href="#">Legals</a></li>
@@ -66,7 +66,16 @@
 
   </div>
 
+<script>
+  
+let list = document.getElementById('screen')
+let menu = document.getElementById('menu-toogle')
 
+menu.addEventListener('click', (e) => {
+  list.classList.toggle('translate-x-full')
+})
+
+</script>
 
 </body>
 

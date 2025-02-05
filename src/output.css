@@ -590,6 +590,9 @@
   .isolation-auto {
     isolation: auto;
   }
+  .z-\[-1\] {
+    z-index: -1;
+  }
   .z-auto {
     z-index: auto;
   }
@@ -901,6 +904,10 @@
   .translate-full {
     --tw-translate-x: 100%;
     --tw-translate-y: 100%;
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-full {
+    --tw-translate-x: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-z-px {
@@ -2253,6 +2260,11 @@
   .lg\:hidden {
     @media (width >= 64rem) {
       display: none;
+    }
+  }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
     }
   }
 }
