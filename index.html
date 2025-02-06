@@ -12,70 +12,27 @@
 
 <body>
 
-  <div class="navbar">
-    <div class="flex justify-between">
+  <nav class="bg-blue-600">
+<div class="flex items-center justify-between p-6">
 
-      <div class="flex justify-between px-8 py-6 w-full">
-        <img src="img/3e30949e-f6ba-4ee3-b86d-cbe20d01302c.svg" alt="" class="h-[50px]">
-    
-        <div class="lg:hidden">
-            <span class="text-3xl cursor-pointer">
-                <ion-icon name="search-outline"></ion-icon>
-            </span>
-    
-            <span class="text-3xl cursor-pointer">
-                <ion-icon name="globe-outline"></ion-icon>
-            </span>
-    
-            <span id="menu-toogle" class="text-4xl pt-2 cursor-pointer text-white bg-[#02876B]">
-                <ion-icon name="menu-outline" class="mt-2"></ion-icon>
-            </span>
-        </div>
-    </div>
+ <div> <a href=""><img src="img/3e30949e-f6ba-4ee3-b86d-cbe20d01302c.svg" alt="" class="h-[60px]"></div></a>
 
-      <div>
+<div class="text-3xl ">
+  <button>
+   <a href=""><ion-icon name="search-outline"></ion-icon></a>
+  </button>
+  <button>
+   <a href=""><ion-icon name="globe-outline"></ion-icon></a>
+  </button>
+  <button class="text-white bg-[#02876B] ">
+    <a href=""><ion-icon name="menu-outline" ></ion-icon></a>
+  </button>
+</div>
 
-        <ul id="screen" class="lg:flex lg:items-center z-[-1] ">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Plain Language</a></li>
-          <li><a href="#">Legals</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Accessibility</a></li>
-          <li><a href="#">Sitemap</a></li>
-          <li><a href="#">Intranet</a></li>
-          <li><a href="#"><img src="img/favicon.ico" alt=""></a></li>
-          <li><a href="#"><ion-icon name="globe-outline"></ion-icon>DE</a></li>
-          <li><a href="#"><ion-icon name="search-outline"></ion-icon></a></li>
-          <li><a href="#">Intranet</a></li>
-        </ul>
+</div>
+  </nav>
 
-        <ul class="lg:flex hidden">
-          <li><a href="#">KIT</a></li>
-          <li><a href="">Topics</a></li>
-          <li><a href="">Studies</a></li>
-          <li><a href="">Research</a></li>
-          <li><a href="">Innovation</a></li>
-          <li><a href="">Career</a></li>
-          <li><a href=""><ion-icon name="home-outline"></ion-icon></a></li>
-        </ul>
-
-      </div>
-
-    </div>
-
-
-  </div>
-
-<script>
   
-let list = document.getElementById('screen')
-let menu = document.getElementById('menu-toogle')
-
-menu.addEventListener('click', (e) => {
-  list.classList.toggle('translate-x-full')
-})
-
-</script>
 
 </body>
 
