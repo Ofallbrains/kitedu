@@ -15,22 +15,27 @@
   <nav class='shadow-2xl w-full'>
     <div class="flex justify-between w-full p-4">
 
-      <div> <a href=""><img src="img/3e30949e-f6ba-4ee3-b86d-cbe20d01302c.svg" alt="" class="h-[60px]"></div></a>
+      <div class="flex justify-between w-full">
 
-      <div class="text-3xl lg:hidden ">
-        <button>
-          <a href=""><ion-icon name="search-outline"></ion-icon></a>
-        </button>
-        <button>
-          <a href=""><ion-icon name="globe-outline"></ion-icon></a>
-        </button>
-        <button id="menu-toogle" class="text-white bg-[#02876B] ">
-          <ion-icon id="menu-icon" name="menu-outline"></ion-icon>
-        </button>
+        <div> <a href=""><img src="img/3e30949e-f6ba-4ee3-b86d-cbe20d01302c.svg" alt="" class="h-[60px]"></div></a>
+
+        <div id="icons" class=" lg:hidden mt-4 ">
+          <button>
+            <ion-icon name="search-outline" class="text-xl mr-1"></ion-icon>
+          </button>
+          <button>
+            <ion-icon name="globe-outline" class="text-2xl mr-2"></ion-icon>
+          </button>
+          <button id="menu-toogle" class="text-white bg-[#02876B] ">
+            <ion-icon id="menu-icon" name="menu-outline" class="text-3xl "></ion-icon>
+          </button>
+        </div>
+
       </div>
-      <div>
 
-        <div class="text-extralight py-2 text-sm text-gray-400 lg:flex hidden  ">
+      <div id="lists">
+
+        <div id="list-1" class="text-extralight py-2 text-sm text-gray-400 lg:flex hidden  ">
           <a href="#" class="mr-4">Home</a>
           <a href="#" class="mr-4">Plain language</a>
           <a href="#" class="mr-4">Legals</a>
@@ -43,11 +48,7 @@
         </div>
 
         <div id="menu"
-          class="fixed top-[92px] right-0 h-full pt-12  bg-black w-[600px] transform translate-x-[0%] transition-transform ease-in-out  duration-300  lg:relative lg:translate-x-0  ">
-
-          <!-- <button id="close-menu" class="lg:hidden text-black text-4xl absolute top-4 right-4 ">
-            <ion-icon name="close-outline"></ion-icon>
-        </button> -->
+          class="list-2 fixed top-[92px] right-0 h-full pt-12  bg-black w-[600px] transform translate-x-[0%] transition-transform ease-in-out  duration-300  lg:relative lg:translate-x-0  ">
           <div class="ml-[100px] text-white text-2xl font-bold flex flex-col  lg:block  ">
             <a href="#" class="mr-4 py-2 text-white ">KIT</a>
             <a href="#" class="mr-4 py-2">Topics</a>
