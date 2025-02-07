@@ -24,13 +24,13 @@
         <button>
           <a href=""><ion-icon name="globe-outline"></ion-icon></a>
         </button>
-        <button class="text-white bg-[#02876B] ">
-          <a href=""><ion-icon name="menu-outline"></ion-icon></a>
+        <button id="menu-toogle" class="text-white bg-[#02876B] ">
+          <ion-icon name="menu-outline"></ion-icon>
         </button>
       </div>
       <div>
 
-        <div class="text-extralight py-2 text-sm text-gray-400  ">
+        <div class="text-extralight py-2 text-sm text-gray-400 lg:flex hidden  ">
           <a href="#" class="mr-4">Home</a>
           <a href="#" class="mr-4">Plain language</a>
           <a href="#" class="mr-4">Legals</a>
@@ -41,19 +41,20 @@
           <a href="#" class="mr-4"></a>
 
         </div>
-        <div>
 
-          <button id="close-menu">
+        <div id="menu" class="fixed top-[92px] right-0 h-full pt-6  bg-blue-500 w-[600px] transform translate-x-[100%] transition-transform ease-in-out  duration-300  lg:relative lg:translate-x-0  ">
+
+          <button id="close-menu" class="lg:hidden text-black text-4xl absolute top-4 right-4 ">
             <ion-icon name="close-outline"></ion-icon>
         </button>
-          <div class="ml-[100px] hover:text- font-bold">
-            <a href="#" class="mr-4">KIT</a>
-            <a href="#" class="mr-4">Topics</a>
-            <a href="#" class="mr-4">Studies</a>
-            <a href="#" class="mr-4">Research</a>
-            <a href="#" class="mr-4">Innovation</a>
-            <a href="#" class="mr-4">Career</a>
-            <a href="" class="text-xl mt-6"><ion-icon name="home-outline"></ion-icon></a>
+          <div class="ml-[100px] text-white font-bold hidden   ">
+            <a href="#" class="mr-4 py-2 ">KIT</a>
+            <a href="#" class="mr-4 py-2">Topics</a>
+            <a href="#" class="mr-4 py-2 ">Studies</a>
+            <a href="#" class="mr-4 py-2">Research</a>
+            <a href="#" class="mr-4 py-2">Innovation</a>
+            <a href="#" class="mr-4 py-2">Career</a>
+            <a href="" class="text-xl "><ion-icon name="home-outline"></ion-icon></a>
           </div>
 
         </div>
@@ -63,7 +64,21 @@
 
   </nav>
 
+<script>
+  const clickMenu = document.getElementById("menu-toogle")
+  const mainMenu = document.getElementById("menu")
+  const closeTag = document.getElementById("close-menu")
 
+  clickMenu.addEventListener('click', () =>{
+    console.log('hy')
+    mainMenu.classList.remove('translate-x-[100%]')
+  })
+
+  closeTag.addEventListener('click', () =>{
+    mainMenu.classList.add('translate-x-[100%]')
+  })
+ 
+</script>
 
 </body>
 
