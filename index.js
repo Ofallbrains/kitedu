@@ -12,3 +12,23 @@ clickMenu.addEventListener('click', () => {
     menuIcon.setAttribute('name', 'close-outline')
   }
 })
+
+const pages = document.getElementById('pages')
+let currentIndex = 0;
+const totalPages = 3;
+
+function showPage(index){
+    pages.style.transform = `translateX(-${index * 400}px)`
+}
+
+function nextPage(){
+    currentIndex = (currentIndex + 1) % totalPages
+    showPage(currentIndex)
+}
+
+function prevPage(){
+    currentIndex = (currentIndex - 1 + totalPages) % totalPages;
+    showPage(currentIndex)
+}
+
+setInterval(nextPage, 5000) 
