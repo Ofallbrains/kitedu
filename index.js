@@ -13,22 +13,23 @@ clickMenu.addEventListener('click', () => {
   }
 })
 
+//logic for pages
 const pages = document.getElementById('pages')
 let currentIndex = 0;
 const totalPages = 3;
 
-function showPage(index){
-    pages.style.transform = `translateX(-${index * 1200}px)`
+function showPage(index) {
+  pages.style.transform = `translateX(-${index * 1200}px)`
 }
 
-function nextPage(){
-    currentIndex = (currentIndex + 1) % totalPages
-    showPage(currentIndex)
+function nextPage() {
+  currentIndex = (currentIndex + 1) % totalPages
+  showPage(currentIndex)
 }
 
-function prevPage(){
-    currentIndex = (currentIndex - 1 + totalPages) % totalPages;
-    showPage(currentIndex)
+function prevPage() {
+  currentIndex = (currentIndex - 1 + totalPages) % totalPages;
+  showPage(currentIndex)
 }
 
-setInterval(nextPage, 4000) 
+setInterval(nextPage, 2000) 
