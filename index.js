@@ -19,7 +19,7 @@ let currentIndex = 0;
 const totalPages = 3;
 
 function showPage(index) {
-  pages.style.transform = `translateX(-${index * 1200}px)`
+  pages.style.transform = `translateX(-${index * 100}%)`
 }
 
 function nextPage() {
@@ -32,4 +32,4 @@ function prevPage() {
   showPage(currentIndex)
 }
 
-setInterval(nextPage, 2000) 
+setInterval(nextPage, 1000) 
