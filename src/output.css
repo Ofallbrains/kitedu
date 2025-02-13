@@ -11,6 +11,7 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-md: 28rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
@@ -555,15 +556,6 @@
   .h-\[1px\] {
     height: 1px;
   }
-  .h-\[40px\] {
-    height: 40px;
-  }
-  .h-\[60px\] {
-    height: 60px;
-  }
-  .h-\[220px\] {
-    height: 220px;
-  }
   .h-\[450px\] {
     height: 450px;
   }
@@ -572,6 +564,15 @@
   }
   .h-\[5px\] {
     height: 5px;
+  }
+  .h-\[40px\] {
+    height: 40px;
+  }
+  .h-\[60px\] {
+    height: 60px;
+  }
+  .h-\[220px\] {
+    height: 220px;
   }
   .h-screen {
     height: 100vh;
@@ -591,17 +592,8 @@
   .w-\[10\%\] {
     width: 10%;
   }
-  .w-\[100px\] {
-    width: 100px;
-  }
   .w-\[12\%\] {
     width: 12%;
-  }
-  .w-\[200px\] {
-    width: 200px;
-  }
-  .w-\[25\%\] {
-    width: 25%;
   }
   .w-\[28\%\] {
     width: 28%;
@@ -609,11 +601,20 @@
   .w-\[30\%\] {
     width: 30%;
   }
-  .w-\[50\%\] {
-    width: 50%;
+  .w-\[50px\] {
+    width: 50px;
   }
-  .w-\[70px\] {
-    width: 70px;
+  .w-\[80\%\] {
+    width: 80%;
+  }
+  .w-\[90\%\] {
+    width: 90%;
+  }
+  .w-\[95\%\] {
+    width: 95%;
+  }
+  .w-\[100\%\] {
+    width: 100%;
   }
   .w-\[350px\] {
     width: 350px;
@@ -624,14 +625,14 @@
   .w-\[45\%\] {
     width: 45%;
   }
-  .w-\[500px\] {
-    width: 500px;
-  }
-  .w-\[50px\] {
-    width: 50px;
+  .w-\[50\%\] {
+    width: 50%;
   }
   .w-\[700px\] {
     width: 700px;
+  }
+  .w-\[70px\] {
+    width: 70px;
   }
   .w-\[800px\] {
     width: 800px;
@@ -642,6 +643,18 @@
   .w-\[8px\] {
     width: 8px;
   }
+  .w-\[100px\] {
+    width: 100px;
+  }
+  .w-\[200px\] {
+    width: 200px;
+  }
+  .w-\[25\%\] {
+    width: 25%;
+  }
+  .w-\[500px\] {
+    width: 500px;
+  }
   .w-fit {
     width: fit-content;
   }
@@ -650,6 +663,9 @@
   }
   .w-screen {
     width: 100vw;
+  }
+  .max-w-md {
+    max-width: var(--container-md);
   }
   .max-w-none {
     max-width: none;
@@ -1183,6 +1199,9 @@
   .rounded-3xl {
     border-radius: var(--radius-3xl);
   }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -1351,6 +1370,9 @@
   }
   .bg-\[\#404040\] {
     background-color: #404040;
+  }
+  .bg-\[\#AED1F3\] {
+    background-color: #AED1F3;
   }
   .bg-\[\#D9D9D9\] {
     background-color: #D9D9D9;
@@ -1674,6 +1696,10 @@
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
+  }
+  .font-\[500px\] {
+    --tw-font-weight: 500px;
+    font-weight: 500px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
